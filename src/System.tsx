@@ -1,18 +1,22 @@
-import React from 'react';
-import Pages from './pages';
+import React, { ReactElement } from 'react';
+import Pages from './modules';
 
 const { Fragment } = React;
 
-const System: React.FC<React.ReactNode> = ({ children }) => {
-
+const Boostrap = (pages:any) => {
   // Boot Application here
   console.log('Pages', Pages);
-
-  return (
-    <Fragment>
-      Hello World
-    </Fragment>
-  );
+  // extract routes
+  // extract navigation
+  // extract app shell components
+  // compose and return a new 
+  return (): ReactElement => {
+    return (
+      <Fragment>
+        Hello World
+      </Fragment>
+    )
+  }
 };
 
-export default System;
+export default Boostrap(Pages);

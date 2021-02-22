@@ -2,12 +2,15 @@ import React from 'react';
 
 const Home = () => {
   return <div>Hello home</div>;
-}
+};
 
-export default {
+const HomePage = () => ({
   name: 'Home',
-  routeProps: {
+  routerProps: {
     path: '/',
     component: Home
-  }
-};
+  },
+  providers: []
+});
+
+export default HomePage();
